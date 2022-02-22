@@ -28,7 +28,15 @@ join classify on products.classify_id = classify.id";
         return $stmt->fetch(\PDO::FETCH_OBJ);
     }
 
+    public function search($data)
+    {
+        $sql = "select * from products where name like %?%";
+        $stmt = $this->connect->prepare($sql);
+        $stmt->bindParam(1,$data['search']);
+        $stmt->execute();
+        return $stmt->fetchAll(\PDO::FETCH_OBJ);
 
+}
 
     public function showById($id)
     {

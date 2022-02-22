@@ -63,5 +63,18 @@ class ProductController
         }
     }
 
+    public function search()
+    {
+        if ($_SERVER["REQUEST_METHOD"]=="GET"){
+            $products = $this->productController->showAll();
+            include "App/View/list.php";
+        }else{
+           $data =  $this->productController->search($_POST);
+           var_dump($data);
+           die();
+            include "App/View/search.php";
+        }
+    }
+
 
 }

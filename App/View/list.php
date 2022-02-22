@@ -5,15 +5,15 @@
     <h1 class="text-center">Danh sách mặt hàng</h1>
     <div class="row">
         <div class="col-9">
-            <form class="form-inline my-2 my-lg-0">
+            <form method="post" class="form-inline my-2 my-lg-0">
             <h5>Nhập tên hàng: </h5>
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
         <div class="col-3">
             <a type="button" class="btn btn-success" href="index.php?page=create">Thêm mặt hàng</a>
-            <a href="index.php?page=create">Thêm Loại</a>
+<!--            <a href="index.php?page=create-hang">Thêm Loại</a>-->
         </div>
     <table class="table mt-3">
         <thead class="thead-blue">
