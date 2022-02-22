@@ -3,7 +3,9 @@
 
     <table class="table table-striped table-dark">
         <thead>
-        <tr><th style="text-align: center" colspan="2">Chi Tiết</th></tr>
+        <tr>
+            <th style="text-align: center" colspan="2">Chi Tiết</th>
+        </tr>
         </thead>
         <tr>
             <th>Tên</th>

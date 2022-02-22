@@ -5,6 +5,7 @@ namespace App\Model;
 class ClassifyModel
 {
     public $classify;
+
     public function __construct()
     {
         $db = new DBConnect();
